@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -19,7 +19,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   List<Map<String, dynamic>> datas = [];
+  
   final Hive_Box2 = Hive.box('todo');
 
   @override
@@ -86,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(10),
-                              boxShadow: [BoxShadow(blurRadius: 2)]),
+                              boxShadow: [BoxShadow(blurRadius: 1)]),
                           height: 100,
                           width: double.infinity,
                           child: Row(

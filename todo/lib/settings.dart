@@ -17,7 +17,7 @@ class settings extends StatelessWidget {
       
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 84, 150, 72),
-        title: Text('Settings',style: TextStyle(color: Colors.black,fontSize: 25),),
+        title: Text('Settings',style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255),fontSize: 25),),
       ),
       body: ListView(
         children: [

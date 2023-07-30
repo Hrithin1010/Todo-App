@@ -24,7 +24,9 @@ class _Add_contentState extends State<Add_content> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Go to Home"),),
+      appBar: AppBar(
+        
+        title: Text("Go to Home"),backgroundColor: Color.fromARGB(255, 84, 150, 72),),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -63,7 +65,9 @@ class _Add_contentState extends State<Add_content> {
                // }
                 create_task({'title' : titlecon,'description':descriptioncon});
                 Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
-              }, child: Text("Add"))
+              }, child: Text("Add"),style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 84, 150, 72),)
+              ),)
             ],
           ),
         ),
